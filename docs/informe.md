@@ -19,65 +19,6 @@ La secuencia se ejecutó comenzando con los datos iniciales (5 clientes, 3 servi
 | 9 | Historial del cliente 1003 | Turno 3 cancelado | Cumple |
 | 10 | Resumen por servicio | Resumen esperado | Cumple |
 
-## Salida de consola
-
-### Pasos 1 a 5 (primera ejecución)
-
-```
-Paso 1
-Cliente encontrado: 1003 | María García | Tel: 55501003 | Activo
-
-Paso 2
-Turno generado: Turno 1 | Cliente: 1001 - Ana López | Servicio: Información | Generado: 2026-10-31 16:42:40 | Estado: PENDIENTE
-Turno generado: Turno 2 | Cliente: 1002 - Carlos Pérez | Servicio: Entrega de documentos | Generado: 2026-10-31 16:42:40 | Estado: PENDIENTE
-Turno generado: Turno 3 | Cliente: 1003 - María García | Servicio: Información | Generado: 2026-10-31 16:42:40 | Estado: PENDIENTE
-Turno generado: Turno 4 | Cliente: 1004 - José Hernández | Servicio: Actualización de datos | Generado: 2026-10-31 16:42:40 | Estado: PENDIENTE
-Turno generado: Turno 5 | Cliente: 1005 - Luisa Morales | Servicio: Entrega de documentos | Generado: 2026-10-31 16:42:40 | Estado: PENDIENTE
-
-Paso 3
-Error: El cliente 1001 ya tiene un turno pendiente.
-
-Paso 4
-Turno cancelado: Turno 3 | Cliente: 1003 - María García | Servicio: Información | Generado: 2026-10-31 16:42:40 | Estado: CANCELADO | Cancelado: 2026-10-31 16:42:40
-Turnos pendientes (en orden de atención)
-Turno 1 | Cliente: 1001 - Ana López | Servicio: Información | ...
-Turno 2 | Cliente: 1002 - Carlos Pérez | Servicio: Entrega de documentos | ...
-Turno 4 | Cliente: 1004 - José Hernández | Servicio: Actualización de datos | ...
-Turno 5 | Cliente: 1005 - Luisa Morales | Servicio: Entrega de documentos | ...
-
-Paso 5
-Turno atendido: Turno 1 | Cliente: 1001 - Ana López | Servicio: Información | Generado: 2026-10-31 16:42:40 | Estado: ATENDIDO | Atendido: 2026-10-31 16:42:40
-Turno atendido: Turno 2 | Cliente: 1002 - Carlos Pérez | Servicio: Entrega de documentos | Generado: 2026-10-31 16:42:40 | Estado: ATENDIDO | Atendido: 2026-10-31 16:42:40
-```
-
-### Pasos 6 a 10 (programa reabierto)
-
-```
-Paso 6 (cola reconstruida)
-Turnos pendientes (en orden de atención)
-Turno 4 | Cliente: 1004 - José Hernández | Servicio: Actualización de datos | ...
-Turno 5 | Cliente: 1005 - Luisa Morales | Servicio: Entrega de documentos | ...
-
-Paso 7
-Turno atendido: Turno 4 | Cliente: 1004 - José Hernández | Servicio: Actualización de datos | ... | Estado: ATENDIDO | ...
-Turno atendido: Turno 5 | Cliente: 1005 - Luisa Morales | Servicio: Entrega de documentos | ... | Estado: ATENDIDO | ...
-
-Paso 8
-Error: No existen turnos pendientes.
-
-Paso 9
-Historial de turnos de María García
-Turno 3 | Cliente: 1003 - María García | Servicio: Información | ... | Estado: CANCELADO | Cancelado: 2026-10-31 16:42:40
-
-Paso 10
-Resumen por servicio
-Servicio                   Pendientes  Atendidos  Cancelados   Total
-Información                         0          1           1       2
-Entrega de documentos               0          2           0       2
-Actualización de datos              0          1           0       1
-Total                               0          4           1       5
-```
-
 ## Capturas principales
 
 ![Pasos 1 a 3](captura1.jpg)
