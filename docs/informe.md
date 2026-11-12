@@ -80,10 +80,10 @@ Total                               0          4           1       5
 
 ## Capturas principales
 
-Insertar aquí las capturas de pantalla de la ejecución en VS Code:
+![Pasos 1 a 3](captura1.jpg)
 
-1. Búsqueda del cliente 1003 (paso 1).
-2. Generación de los turnos 1 a 5 y rechazo del segundo turno de 1001 (pasos 2 y 3).
-3. Cancelación del turno 3 y cola pendiente (paso 4).
-4. Atención de los turnos y programa reabierto con la cola reconstruida (pasos 5 y 6).
-5. Mensaje sin turnos pendientes, historial del cliente 1003 y resumen por servicio (pasos 8 a 10).
+![Pasos 1 a 3, continuación](captura4.jpg)
+
+![Pasos 4 y 5](captura2.jpg)
+
+![Pasos 6 a 10](captura3.jpg)
